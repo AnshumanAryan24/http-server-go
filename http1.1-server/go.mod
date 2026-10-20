@@ -1,3 +1,3 @@
-module http1.1-server
+module http_server1
 
 go 1.27.0
