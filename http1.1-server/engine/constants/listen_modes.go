@@ -18,12 +18,11 @@ const (
 )
 
 func NewListenMode(code int) (ListenMode, error) {
-	if (code == ACCEPT_ALL) {
+	if code == ACCEPT_ALL {
 		return &listenMode{code, "ACCEPT ALL"}, nil
 	}
 	return nil, errors.New("Invalid code for ListenMode")
 }
-
 
 func (l *listenMode) Desc() string {
 	return l.desc
