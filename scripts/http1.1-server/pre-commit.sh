@@ -2,6 +2,9 @@
 set -e
 
 echo "=== Running Pre-Commit Hooks (Format & Build) ==="
+cd http1.1-server/
+echo "From directory:"
+pwd
 
 # 1. Check for compilation errors (Fails if the app cannot build)
 echo "Checking build..."
